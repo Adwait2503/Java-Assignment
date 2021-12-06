@@ -1,14 +1,32 @@
 package com.te.employee;
 
 public class SeniorDeveloper extends Developers {
-	public SeniorDeveloper(Employee employee) {
-		super();
-		// TODO Auto-generated constructor stub
+	SeniorDeveloper(String ename, String designation, double sal) {
+		super(ename, designation, sal);
+
+	}
+
+	public static int scount = 0;
+
+	@Override
+	public void code() {
+		System.out.println("Senior Developer writes code");
+
 	}
 
 	@Override
-	public void work() {
-		// TODO Auto-generated method stub
-System.out.println("They work on big projects");
+	public void project() {
+		System.out.println("works on live projects");
+
 	}
+
+	@Override
+	public void experience() {
+		System.out.println("Have good experience");
+	}
+
+	{
+		scount++;
+	}
+
 }

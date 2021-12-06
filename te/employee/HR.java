@@ -1,11 +1,16 @@
 package com.te.employee;
 
-public abstract class HR extends Employee {
-
-	static int count;
-	{
-		System.out.println("Number of HR :" + count++);
+public class Hr extends Employee {
+	Hr(String ename, String designation, double sal) {
+		super(ename, designation, sal);
+		// TODO Auto-generated constructor stub
 	}
 
-	abstract public void work();
+	public void hire() {
+		System.out.println("Hr does hiring ");
+	}
+
+	public void givesalary() {
+		System.out.println("Hr gives salary");
+	}
 }

@@ -1,52 +1,25 @@
 package com.te.employee;
 
 public class Employee {
-	private int eid;
-	private String ename;
-	private double esal;
-	static int count;
-	private String designation;
-	{
-		count++;
-		System.out.println("Welcome");
+	Employee(String ename, String designation, double sal) {
+		this.ename = ename;
+		this.sal = sal;
+		this.designation = designation;
 	}
 
 	Employee() {
+		count = count - 1;
+		System.out.println("Total employees= " + count);
 	}
 
-	public Employee(String ename, double esal, String designation) {
-		super();
-		this.eid = count;
-		this.ename = ename;
-		this.esal = esal;
-		this.designation = designation;
+	public static int count = 0;
+	double sal;
+	String ename;
+	public static String company = "Technoelevate";
+	public int eid = 100 + count;
+	public String designation;
+	{
+		count++;
 	}
 
-	public int getId() {
-		return eid;
-	}
-
-	public String getName() {
-		return ename;
-	}
-
-	public void setName(String ename) {
-		this.ename = ename;
-	}
-
-	public double getSal() {
-		return esal;
-	}
-
-	public void setSal(double esal) {
-		this.esal = esal;
-	}
-
-	public String getDesignation() {
-		return designation;
-	}
-
-	public void setDesignation(String designation) {
-		this.designation = designation;
-	}
 }

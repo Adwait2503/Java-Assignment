@@ -2,9 +2,31 @@ package com.te.employee;
 
 public class Intern extends Developers {
 
-	@Override
-	public void work() {
-		// TODO Auto-generated method stub
-System.out.println("They work on small projects");
+	Intern(String ename, String designation, double sal) {
+		super(ename, designation, sal);
 	}
+
+	public static int Interncount = 0;
+
+	@Override
+	public void code() {
+		System.out.println("Intern does coding");
+
+	}
+
+	@Override
+	public void project() {
+		System.out.println("works on pseudo live projects");
+	}
+
+	@Override
+	public void experience() {
+		System.out.println("Has no experience");
+
+	}
+
+	{
+		Interncount++;
+	}
+
 }

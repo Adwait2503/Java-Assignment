@@ -2,10 +2,12 @@ package com.te.employee;
 
 public abstract class Tester extends Employee {
 
-	static int count;
-	{
-		System.out.println("Number of Test Engeeners :" + count++);
+	Tester(String ename, String designation, double sal) {
+		super(ename, designation, sal);
+		// TODO Auto-generated constructor stub
 	}
 
-	abstract public void work();
+	public abstract void test();
+
+	public abstract void experience();
 }

@@ -1,9 +1,15 @@
 package com.te.employee;
 
 public abstract class Developers extends Employee {
-	{
-		System.out.println("Number of Developers :" + Employee.count++);
+	Developers(String ename, String designation, double sal) {
+		super(ename, designation, sal);
+
 	}
 
-	abstract public void work();
+	public abstract void code();
+
+	public abstract void project();
+
+	public abstract void experience();
+
 }
