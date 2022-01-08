@@ -6,12 +6,11 @@ public class Main {
 		// TODO Auto-generated method stub
 		NumberThread numberThread = new NumberThread();
 		AlphabeticalThread alphabeticalThread = new AlphabeticalThread();
-		numberThread.setPriority(3);
-		alphabeticalThread.setPriority(1);
-		numberThread.join();
-		alphabeticalThread.join();
-		numberThread.start();
 		alphabeticalThread.start();
+		Thread.currentThread().sleep(500);
+		//System.out.println(Thread.currentThread().getName());
+		numberThread.start();
+		
 	}
 
 }
